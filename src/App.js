@@ -26,10 +26,10 @@ function App() {
           </p>
 
 
-          <div className='THIS sample does not work'>
+          {/* <div className='THIS sample does not work'>
             <input type="text" placeholder={translate('demo-placeholder')} />
             <input type="text" placeholder={<FormattedMessage id="demo-placeholder" />} />
-          </div>
+          </div> */}
 
           <Input />
           <FormattedMessage id="demo-placeholder" defaultMessage="search">
@@ -37,15 +37,6 @@ function App() {
                 <input placeholder={placeholder}/>
             }
           </FormattedMessage>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-
           <hr/>
 
           <button onClick={() => setLocale(LOCALES.ENGLISH)}>English</button>
